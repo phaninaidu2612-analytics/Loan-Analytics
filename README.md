@@ -97,7 +97,6 @@ Income bracket =
     'Loan_default'[Income] >= 60000 , "High Income")
 
 Snap of the New created column: ![income_bracket](https://github.com/user-attachments/assets/4b67c763-2627-499e-a1c5-8aa8e25d18da)
----
 
 ## Measures (DAX)
 
