@@ -113,6 +113,7 @@ DIVIDE(
 Snap of the DAX : ![yoy_default_loan_change](https://github.com/user-attachments/assets/897c1a70-2670-4dfe-a060-2b6bdd5efb1f)
 
 
+
 YOY Loan Amount Change = 
 DIVIDE(
     CALCULATE(SUM('Loan_default'[LoanAmount]),
@@ -122,12 +123,16 @@ DIVIDE(
     CALCULATE(SUM('Loan_default'[LoanAmount]),
     'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1),0) * 100
 
+    
+
 YTD Loan Amount = 
 CALCULATE(SUM('Loan_default'[LoanAmount]),
 DATESYTD('Loan_default'[Loan_Date_DD_MM_YYYY].[Date]),
 ALLEXCEPT('Loan_default',Loan_default[Credit Score Bins],Loan_default[MaritalStatus]))
 
 Snap of DAX : ![ytd](https://github.com/user-attachments/assets/1a3d176f-5348-4772-a7e4-a31ff1a54ad1)
+
+
 
 Average Loan Amt (High Credit) = 
 AVERAGEX(FILTER('Loan_default','Loan_default'[Credit Score Bins]="High"'),'Loan_default'[LoanAmount])
@@ -200,7 +205,7 @@ SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),
 - Demographic segmentation
 - Financial profiling
 
----
+
 
 ## Insights
 
@@ -213,29 +218,29 @@ Default rate by employment type:
   Full-time employed borrowers show the lowest default rate (~2.36%), suggesting greater financial stability and repayment capability  
   Default risk decreases as employment stability increases, highlighting employment type as a key factor in credit risk assessment.
 
-snap of Default rate : ![snap_default](https://github.com/user-attachments/assets/b6ee647f-a1eb-499b-a10f-2987731401d3)
+![snap_default](https://github.com/user-attachments/assets/b6ee647f-a1eb-499b-a10f-2987731401d3)
 
 High credit score customers show stable patterns:
 - High credit score borrowers exhibit consistent loan amounts (~123K–128K) across different age groups and marital statuses, indicating stable borrowing behavior  
   This consistency reflects stronger financial reliability, making high credit individuals lower-risk segments for lending institutions  
 
-Snap of the High credit : ![snap_highcredit](https://github.com/user-attachments/assets/811318c3-ecfe-4c9c-9c74-912f7757ce76)
+![snap_highcredit](https://github.com/user-attachments/assets/811318c3-ecfe-4c9c-9c74-912f7757ce76)
 
 Age Influences Loan Amount:
 - Adults (20–39 age group) show the highest average loan amount (~127.9K), indicating strong borrowing activity during early career stages  
   Loan amounts show a slight decline with age, with teenagers having the lowest borrowing levels due to limited financial independence  
   This trend suggests that borrowing demand is highest during active earning and growth phases of life  
 
-Snaps of Age group : ![age_influence](https://github.com/user-attachments/assets/36f3cd00-e4a3-4793-bdd9-566bcb94e7e7)
+![age_influence](https://github.com/user-attachments/assets/36f3cd00-e4a3-4793-bdd9-566bcb94e7e7)
    
 
 Income influences Loan Amount:
 - Loan distribution increases significantly with income level, with high-income borrowers contributing the majority (~21.73bn), while low-income groups account for a relatively smaller share (~3.63bn)  
   This suggests that income level plays a key role in determining borrowing capacity and loan size  
 
-Snaps of income loan : ![income_influence](https://github.com/user-attachments/assets/2a93c668-e7d9-46f7-ac34-7ce5a3087326)
+![income_influence](https://github.com/user-attachments/assets/2a93c668-e7d9-46f7-ac34-7ce5a3087326)
 
----
+-------
 
 
 
