@@ -57,11 +57,11 @@ The dataset contains information about borrowers, including financial details, l
 
 ---
 
-## Steps Followed :
+## Steps Followed :-
 
 
 
-### Data Preparation
+### Data Preparation :
 - Create a work space in PowerBI service.At the top there is a download icon->Data gateway ->we installed a data gateway standard edition 
 - In our workspace , there is an option called new item->a box appears and in that searh for data
   and choose Dataflow gen1.Then choose SQL server database
@@ -74,7 +74,7 @@ The dataset contains information about borrowers, including financial details, l
 
 ---
 
-### Data Transformation
+### Data Transformation :
 
 - Year = YEAR('Loan_default'[Loan_Date_DD_MM_YYYY])
 
@@ -101,7 +101,7 @@ Snap of the New created column: ![credit_bin](https://github.com/user-attachment
 
 Snap of the New created column: ![income_bracket](https://github.com/user-attachments/assets/4b67c763-2627-499e-a1c5-8aa8e25d18da)
 
-## Measures (DAX)
+## Measures (DAX) :
 
 - YOY Default Loans change = 
 DIVIDE(
@@ -191,7 +191,7 @@ SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),
 
 ![powerbi_service](https://github.com/user-attachments/assets/2c25e266-4d65-4ce2-8494-5758b9ec26ae)
 
-## Scheduled Refresh
+## Scheduled Refresh :
 
 - Implemented scheduled refresh in Power BI Service to automatically update the dataset with the latest loan records  
 - Enabled continuous monitoring of key metrics such as default rates, loan distribution, and income segmentation  
@@ -199,7 +199,7 @@ SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),
 
 ![sr](https://github.com/user-attachments/assets/e0aed5c7-4fe2-40c7-867a-b735e9ad2a5f)
 
-## Features
+## Features :
 
 - Multi-page dashboard
 - Risk analysis using default rates
@@ -209,7 +209,7 @@ SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),
 
 
 
-## Insights
+## Insights :
 
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
 
