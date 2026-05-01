@@ -262,3 +262,20 @@ Following inferences can be drawn from the dashboard
 - Data Modeling
 - Dataflow
 - MS SQL Server
+
+## Conclusion
+
+This dashboard provides a comprehensive analysis of loan default behavior by combining financial, demographic, and temporal factors into a unified view.
+
+The analysis highlights that employment stability, credit score, income level, and age are key drivers influencing loan repayment patterns. By leveraging these insights, financial institutions can better understand borrower risk profiles and identify segments that require stricter credit evaluation.
+
+The use of advanced DAX measures and time-based analysis (YOY, YTD) enables continuous monitoring of loan performance, while automated data refresh ensures up-to-date insights for decision-making.
+
+Overall, this solution empowers lenders to:
+
+- Improve risk assessment strategies
+- Optimize loan approval processes
+- Minimize default rates
+- Enhance financial stability and profitability
+
+This project demonstrates how data-driven analytics can transform raw financial data into actionable insights for smarter lending decisions.
