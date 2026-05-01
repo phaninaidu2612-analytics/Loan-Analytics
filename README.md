@@ -197,7 +197,7 @@ SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),
 - Enabled continuous monitoring of key metrics such as default rates, loan distribution, and income segmentation  
 - Reduced manual effort by automating data updates, ensuring timely and accurate decision-making  
 
-![sr](https://github.com/user-attachments/assets/e0aed5c7-4fe2-40c7-867a-b735e9ad2a5f)
+![sr](https://github.com/user-attachments/assets/1985b96b-13b5-4a77-a027-535399c07f15)
 
 ## Features :
 
