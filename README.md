@@ -4,7 +4,7 @@
 # Loan Default Analysis Dashboard (Data Source : Dataflow)
 
 ## Dashboard Link : 
-https://app.powerbi.com/links/X2KOdQBg3U?ctid=06cd4ed5-3b7f-47b0-8ef6-29dee1c5060b&pbi_source=linkShare&bookmarkGuid=b0a4724e-fb75-4d31-bfc9-b1850e1de915
+https://app.powerbi.com/view?r=eyJrIjoiYzJiN2I4MTctNzBmZS00OGU3LWJlMjMtOWMxNDUzYTM4NTM2IiwidCI6IjA2Y2Q0ZWQ1LTNiN2YtNDdiMC04ZWY2LTI5ZGVlMWM1MDYwYiJ9&pageName=eef96060309c56e208a1
 
 
 ## Dashboard Preview :
